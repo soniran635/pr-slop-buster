@@ -66,7 +66,7 @@ flowchart TD
 
 ## 🚀 Quickstart
 
-### 1. Clone & Set Up
+### Clone & Set Up
 ```bash
 git clone [https://github.com/soniran635/pr-slop-buster.git](https://github.com/soniran635/pr-slop-buster.git)
 cd pr-slop-buster
@@ -75,7 +75,8 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
-### 2. Launch the Interactive Dashboard
+
+Launch the Interactive Dashboard
 streamlit run ui/app.py
 Open http://localhost:8501 to test the 4 failure modes, inspect live PR diffs, and calculate engineering review time saved.
 
