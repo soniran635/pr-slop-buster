@@ -5,6 +5,9 @@
   <img src="https://img.shields.io/badge/UI-Streamlit-FF4B4B?style=for-the-badge&logo=streamlit&logoColor=white" alt="Streamlit" />
   <img src="https://img.shields.io/badge/License-MIT-green?style=for-the-badge" alt="MIT License" />
   <img src="https://img.shields.io/badge/Focus-Code_Quality_%26_Review-blue?style=for-the-badge" alt="Code Quality" />
+  <a href="https://www.agensi.io/skills/pr-slop-buster">
+    <img src="https://img.shields.io/badge/Instant_Install-Agensi_Skill-8A2BE2?style=for-the-badge&logo=curseforge&logoColor=white" alt="Install on Agensi" />
+  </a>
 </p>
 
 > An autonomous code review assistant for Cursor, Claude Code, and Copilot that strips AI-generated boilerplate, flags heavy dependency bloat, detects shallow tautological mock tests, and enforces minimalist clean architecture before human review.
