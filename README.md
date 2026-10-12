@@ -41,3 +41,37 @@ flowchart TD
     G --> H{"Review Gate Verdict"}
     H -->|Slop >= 30%| I["🚨 SLOP DETECTED: Actionable Refactor Advice"]
     H -->|Slop < 30%| J["✅ CLEAN: Ready for Human Code Review"]
+```
+---
+
+## 🛡️ The 4 Slop Audits Enforced
+
+| Audit Category | What It Detects | Staff Architect Remediation |
+| :--- | :--- | :--- |
+| **Dependency Bloat** | Importing `lodash`, `moment`, or heavy utilities for basic array/date math. | Drop-in replacements using native modern standard library APIs. |
+| **Shallow Mock Tests** | Tautological assertions (e.g. `expect(true).toBe(true)`, `assert True`). | Forces tests to verify concrete state mutations and boundary conditions. |
+| **Over-Engineering** | Premature Abstract Factory or Singleton design patterns on small features. | Simplifies complex class hierarchies into pure, decoupled functions. |
+| **Parrot Comments** | Comments that simply restate function names (e.g. `// get user`). | Prunes comment noise to let self-documenting code speak for itself. |
+
+---
+
+## 🛠️ Tech Stack
+
+* **Engine:** Python 3.9+, Pydantic v2, Regular Expression Syntax Parsers
+* **Interactive Dashboard:** Streamlit
+* **Agent Integration:** Universal `SKILL.md` format for Cursor, Claude Code, and Copilot
+* **License:** MIT License
+
+---
+
+## 🚀 Quickstart
+
+### 1. Clone & Set Up
+```bash
+git clone [https://github.com/soniran635/pr-slop-buster.git](https://github.com/soniran635/pr-slop-buster.git)
+cd pr-slop-buster
+
+python3 -m venv venv
+source venv/bin/activate
+
+pip install -r requirements.txt
