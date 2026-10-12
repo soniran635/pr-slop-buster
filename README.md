@@ -75,3 +75,26 @@ python3 -m venv venv
 source venv/bin/activate
 
 pip install -r requirements.txt
+### 2. Launch the Interactive Dashboard
+streamlit run ui/app.py
+Open http://localhost:8501 to test the 4 failure modes, inspect live PR diffs, and calculate engineering review time saved.
+
+📂 Repository Structure
+pr-slop-buster/
+├── package/
+│   ├── SKILL.md                         # Universal AI agent skill instructions
+│   ├── scripts/
+│   │   └── slop_scanner.py              # Standalone Python audit scanner
+│   └── templates/
+│       └── slop_scorecard.md            # Pull request scorecard template
+├── src/
+│   ├── models.py                        # Pydantic schemas (SlopFinding, SlopScorecard)
+│   └── slop_detector.py                 # Core detection and scoring engine
+├── ui/
+│   └── app.py                           # Streamlit interactive dashboard & ROI model
+├── pr-slop-buster.zip                   # Pre-packaged commercial skill bundle
+├── requirements.txt
+└── README.md
+
+### 📄 License
+MIT License. Open source and free for the community.
