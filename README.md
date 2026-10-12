@@ -97,5 +97,5 @@ pr-slop-buster/
 ├── requirements.txt
 └── README.md
 
-### 📄 License
+📄 License
 MIT License. Open source and free for the community.
